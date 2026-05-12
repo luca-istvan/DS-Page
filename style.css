@@ -1,0 +1,191 @@
+/* style.css */
+
+*{
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero{
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #7b2cbf,
+        #c9184a
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    color: white;
+}
+
+.hero-content{
+    max-width: 800px;
+}
+
+.hero h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn{
+    display: inline-block;
+
+    background: white;
+    color: #7b2cbf;
+
+    text-decoration: none;
+
+    padding: 18px 35px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+section{
+    padding: 90px 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #7b2cbf;
+}
+
+.about p{
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 19px;
+}
+
+.cards{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+
+    width: 260px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h3{
+    color: #c9184a;
+    margin-bottom: 15px;
+}
+
+.author{
+    background: #faf5ff;
+}
+
+.author-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    max-width: 900px;
+}
+
+.text p{
+    margin-bottom: 20px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.cta{
+    background: linear-gradient(
+        135deg,
+        #c9184a,
+        #7b2cbf
+    );
+
+    color: white;
+    text-align: center;
+}
+
+.cta h2{
+    color: white;
+}
+
+.cta p{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.btn-large{
+    font-size: 18px;
+    padding: 20px 45px;
+}
+
+footer{
+    background: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 768px){
+
+    .hero h1{
+        font-size: 45px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+}
